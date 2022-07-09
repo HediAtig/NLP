@@ -6,9 +6,9 @@
 2. cd NLP
 
 3. Create the environment 
-  3.1 conda create --name NLP
-  3.2 conda activate NLP
-  3.3 conda install -y --file requirements.txt
+3.1 conda create --name NLP
+3.2 conda activate NLP
+3.3 conda install -y --file requirements.txt
 
 4. streamlit run main.py
 5. open on a brower http://localhost:8501/
