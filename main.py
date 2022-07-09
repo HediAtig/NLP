@@ -12,12 +12,10 @@ from nltk.sentiment import SentimentIntensityAnalyzer
 nltk.download('vader_lexicon')
 
 
-# streamlit create the visual interface.
 uploaded_file = st.sidebar.file_uploader("Upload the chat file:")
 
 if uploaded_file is not None:
 
-    # Function used to
     def ValidDateAndTime(s):
         pattern = '[], []'
         result = re.match(pattern, s)
@@ -36,15 +34,12 @@ if uploaded_file is not None:
 
         return dateTime, sender, message
 
-    # List to keep track of data so it can be used by a Pandas dataframe
     parsedData = []
 
-    # Uploading exported chat file
     conversationPath = 'wh_chat.txt'  # chat file
     filepath = uploaded_file
 
-    # Skipping first line of the file because contains
-    # information related to something about end-to-end encryption
+
     filepath.readline()
     messageBuffer = []
     dateTime, sender = None, None
@@ -53,7 +48,6 @@ if uploaded_file is not None:
 
         line = filepath.readline().decode('utf-8')
 
-        print(line)
 
         
         if not line:
@@ -70,7 +64,6 @@ if uploaded_file is not None:
         else:
             messageBuffer.append(line)
 
-    # Initialising a pandas Dataframe that contains the asnwer
     df_final_result = pd.DataFrame(
         parsedData, columns=['Date & Time', 'Sender', 'Message'])
 
