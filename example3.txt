@@ -1,0 +1,439 @@
+[11:34 am, 10/05/2022] Ediz: hello, we should decide on this and start preparing soon I think. it's due to May 13th. anybody has any experience with the tools above?
+[0:08 pm, 10/05/2022] Julian: No 😖
+[0:08 pm, 10/05/2022] Julian: I was working on creating the model
+[0:11 pm, 10/05/2022] Ediz: on streamlit?
+[0:12 pm, 10/05/2022] Julian: on a notebook
+[0:14 pm, 10/05/2022] Ediz: i was working on streamlit part but not easy to get the instructions ./
+[0:14 pm, 10/05/2022] Ediz: what dataset you were using?
+[0:24 pm, 10/05/2022] Julian: 🥺🥺
+[0:24 pm, 10/05/2022] Julian: the one on kaggle
+[0:25 pm, 10/05/2022] Julian: https://www.kaggle.com/datasets/iabhishekofficial/mobile-price-classification?select=train.csv
+[0:28 pm, 10/05/2022] Ediz: there're 2 train and test sets in here. did you use it as it is?
+[2:22 pm, 10/05/2022] Ediz: also the price value is defined as a range. so we won't be able to predict the phone price in euros. better to find one including proper values and will be good if all data is in a single file as we've done in most of the classes. then we will be able to experiment on train/test split instead of using fixed data to predict well I think
+[2:34 pm, 10/05/2022] Julian: There’s only one no?
+[2:34 pm, 10/05/2022] Julian: Actually the data is the same way as it is for the dsp house prices
+[2:34 pm, 10/05/2022] Julian: We could use clustering
+[2:34 pm, 10/05/2022] Julian: No?
+[2:38 pm, 10/05/2022] Ediz: no ./ 2 of them. train and test. and price range value changes between 0 and 3. also check the distribution
+[2:39 pm, 10/05/2022] Ediz: i don't have much ideas on it
+[2:45 pm, 10/05/2022] Julian: It’s like the same we did for machine learning homework #7
+[2:46 pm, 10/05/2022] Ediz: ah ok neighbor approach. how it should be used in this case?
+[2:47 pm, 10/05/2022] Ediz: also can you check this one? the order seemed more proper
+
+https://www.kaggle.com/datasets/artempozdniakov/ukrainian-market-mobile-phones-data
+[2:48 pm, 10/05/2022] Julian: Yes
+[2:48 pm, 10/05/2022] Julian: Because it will classify a cellphone
+[2:56 pm, 10/05/2022] Julian: Hi yes because the test one does not have put out value so that data we will use it to make predictions after
+[2:57 pm, 10/05/2022] Julian: we will predict a range that would be like a category to know if it is expensive or not
+[2:58 pm, 10/05/2022] Julian: and the good things is that that one allready have a test set so fot he future we will note have to create values to do predictions
+[2:58 pm, 10/05/2022] Julian: and has no missing values and its balances
+[3:00 pm, 10/05/2022] Julian: This one have some categories with missing values
+[3:01 pm, 10/05/2022] Julian: And when we do the predictions part we will have to create new data
+[3:01 pm, 10/05/2022] Julian: Like the other one the only difference with the one of house process is that we will not used linear regression but clustering
+[3:02 pm, 10/05/2022] Julian: I could do that
+[3:05 pm, 10/05/2022] Ediz: alright if it's ok to show cheap/expensive value in 0...4 range. just thought we could specify the features more to have a varied kind of predictions in the end
+[3:06 pm, 10/05/2022] Ediz: i'm on streamlit part. you can send the model part then when it'll be ok to do experiments
+[3:06 pm, 10/05/2022] Ediz: i'll also push it after some progress. going on with the same dataset for now
+[3:15 pm, 10/05/2022] Julian: I’m working on it
+[3:16 pm, 10/05/2022] Julian: That’s why I would like to ask the teacher if he thinks if it’s good but they never gave us feedback
+[8:56 pm, 10/05/2022] Ediz: 😶
+[8:57 pm, 10/05/2022] Ediz: just finished the skeleton of streamlit part and deployed to heroku
+[8:57 pm, 10/05/2022] Ediz: https://dsp-streamlit-heroku.herokuapp.com/
+[8:57 pm, 10/05/2022] Ediz: we can try to connect with the model soon @Julian
+[8:57 pm, 10/05/2022] Nataly Epita: sorry guys i was in french then doing an assignment
+[8:57 pm, 10/05/2022] Nataly Epita: what are u guys up to
+[8:59 pm, 10/05/2022] Ediz: i'm about to start action learning with you hahs
+[9:00 pm, 10/05/2022] Nataly Epita: amazing 🤩
+[9:00 pm, 10/05/2022] Nataly Epita: also this isnt working for me
+[9:00 pm, 10/05/2022] Nataly Epita: is it opening for u @Julian
+[9:01 pm, 10/05/2022] Ediz: It has to 👀
+[9:03 pm, 10/05/2022] Nataly Epita: ok its working now!!
+[9:18 pm, 10/05/2022] Julian: Sorry I’m eating 😖
+[9:18 pm, 10/05/2022] Julian: I’m try it latter
+[9:19 pm, 10/05/2022] Julian: Before mid night I’ll send you the model in the same form of the dsa project
+[9:26 pm, 10/05/2022] Ediz: sure sure, i won't be able to work at least before tomorrow anyways
+[9:28 pm, 10/05/2022] Nataly Epita: should i make a teams so we can schedule a meeting with alaa?
+[9:29 pm, 10/05/2022] Nataly Epita: omg i can like messages on whatsapp now
+[9:30 pm, 10/05/2022] Nataly Epita: im asking bc of this
+[9:31 pm, 10/05/2022] Aida: yes, you should do it
+[9:33 pm, 10/05/2022] Julian: Sorry 😖
+[9:52 pm, 10/05/2022] Nataly Epita: ediz
+[9:52 pm, 10/05/2022] Nataly Epita: wait not here
+[9:53 pm, 10/05/2022] Ediz: :D
+[9:16 am, 11/05/2022] Julian: just push the code
+[9:16 am, 11/05/2022] Julian: 🙂
+[10:00 am, 11/05/2022] Med Hedi Ben Atig: Guys gm .. are u in class ?
+[10:02 am, 11/05/2022] Aida: yes
+[10:03 am, 11/05/2022] Med Hedi Ben Atig: On my way .. a looot of perturbation in the transport.. did he do the attendance
+[10:03 am, 11/05/2022] Med Hedi Ben Atig: I’ll catch u on the break
+[10:04 am, 11/05/2022] Aida: no, he does it himself after class (?) I guess
+[10:05 am, 11/05/2022] Med Hedi Ben Atig: Okay i’ll be there at 11 .. can u tell me when the break starts ?
+[10:07 am, 11/05/2022] Aida: okay
+[4:03 pm, 11/05/2022] Ediz: @Julian can you check this out for the range stuff we talked about. seemed like might be useful
+[4:03 pm, 11/05/2022] Ediz: https://stackoverflow.com/a/51320729/11911360
+[4:03 pm, 11/05/2022] Julian: Sure
+[10:30 pm, 12/05/2022] Ediz: is it ok to all?
+[10:32 pm, 12/05/2022] Julian: I just push
+[10:34 pm, 12/05/2022] Julian: Some code of fast api
+[10:34 pm, 12/05/2022] Julian: Yo read a scab
+[10:34 pm, 12/05/2022] Julian: Cav
+[10:34 pm, 12/05/2022] Nataly Epita: ok with me
+[10:34 pm, 12/05/2022] Nataly Epita: when is it again?
+[10:35 pm, 12/05/2022] Nataly Epita: tomorrow?
+[10:35 pm, 12/05/2022] Aida: yes
+[10:35 pm, 12/05/2022] Aida: okay for me too
+[10:36 pm, 12/05/2022] Ediz: i think you're the one who can edit the meeting as the organizer
+[10:36 pm, 12/05/2022] Nataly Epita: ok ill do it now
+[10:37 pm, 12/05/2022] Nataly Epita: done
+[10:58 pm, 12/05/2022] Ediz: thanks! is it under a different branch, or?
+[10:59 pm, 12/05/2022] Julian: The same
+[11:13 pm, 12/05/2022] Ediz: hmm, i still can't see it somehow
+[0:03 am, 13/05/2022] Julian: Unta un notebooks
+[0:03 am, 13/05/2022] Julian: In main.Py
+[5:10 pm, 13/05/2022] Med Hedi Ben Atig: Hello
+[5:26 pm, 13/05/2022] Ediz: https://teams.microsoft.com/l/meetup-join/19%3aJZ93qC2pRtKllQh73g7QvNC48qQH4P3jfZ9_75TL6Gw1%40thread.tacv2/1652211377191?context=%7b%22Tid%22%3a%223534b3d7-316c-4bc9-9ede-605c860f49d2%22%2c%22Oid%22%3a%22eeff72b9-66a7-4660-a53b-f6a77cb25924%22%7d
+[5:26 pm, 13/05/2022] Ediz: hai
+[5:27 pm, 13/05/2022] Ediz: will be at 6pm
+[5:27 pm, 13/05/2022] Julian: ok perfect
+[5:28 pm, 13/05/2022] Med Hedi Ben Atig: It’s a follow up session .. not a validation ?
+[5:28 pm, 13/05/2022] Ediz: just we're gonna discuss the steps i think
+[5:28 pm, 13/05/2022] Ediz: yes
+[5:28 pm, 13/05/2022] Med Hedi Ben Atig: Okayy perfect thenn
+[8:17 pm, 17/05/2022] Ediz: heroku tutorial
+
+https://towardsdatascience.com/a-quick-tutorial-on-how-to-deploy-your-streamlit-app-to-heroku-874e1250dadd
+[8:24 pm, 17/05/2022] Nataly Epita: @Julian can you send a contributor request again?
+[8:24 pm, 17/05/2022] Nataly Epita: to the github
+[8:44 pm, 17/05/2022] Julian: Yes
+[8:45 pm, 17/05/2022] Julian: Which is your user?
+[8:46 pm, 17/05/2022] Nataly Epita: natfal14
+[8:46 pm, 17/05/2022] Med Hedi Ben Atig: Can u add me to the github too ?
+[8:46 pm, 17/05/2022] Med Hedi Ben Atig: Branche
+[8:48 pm, 17/05/2022] Julian: It’s says you already have a pending invitation 😖
+[8:49 pm, 17/05/2022] Julian: Ok I send it to you
+[8:49 pm, 17/05/2022] Julian: Yes
+[8:51 pm, 17/05/2022] Med Hedi Ben Atig: Mt email is med-hedi.ben-atig@epita.fr
+[8:51 pm, 17/05/2022] Med Hedi Ben Atig: User name: HediAtig
+[8:52 pm, 17/05/2022] Julian: Ok shit I thought this was your name 😖
+[8:52 pm, 17/05/2022] Med Hedi Ben Atig: Hahahaha nope 😂
+[8:52 pm, 17/05/2022] Med Hedi Ben Atig: I meant add me to the branche
+[8:52 pm, 17/05/2022] Julian: Ahhh
+[8:54 pm, 17/05/2022] Med Hedi Ben Atig: Hhhhh thanx men .. done
+[8:54 pm, 17/05/2022] Nataly Epita: ohh got it thank youu
+[0:33 am, 19/05/2022] Ediz: hello team, can anyone help on reordering the streamlit part to make it look a bit more fancy?
+[8:42 am, 19/05/2022] Nataly Epita: yes sure
+[11:32 am, 19/05/2022] Med Hedi Ben Atig: Hello
+[11:32 am, 19/05/2022] Med Hedi Ben Atig: Yess
+[11:56 am, 19/05/2022] Ediz: It would be good to have a sidebar on the left like this and all thr predictions and data analysis on the right main side
+[6:19 pm, 14/06/2022] Ediz: Hello guys, do you know when's the next deadline for dsp? One of the guys told me like we need to be done by next wednesday
+[6:19 pm, 14/06/2022] Nataly Epita: yeah like the 22nd
+[6:21 pm, 14/06/2022] Ediz: Okay
+[6:21 pm, 14/06/2022] Ediz: We are still missing 3 main parts i think
+[6:22 pm, 14/06/2022] Ediz: Airflow, database and grafana
+[6:22 pm, 14/06/2022] Med Hedi Ben Atig: We need to gather in the university and work on them
+[6:22 pm, 14/06/2022] Ediz: Any of us have experience in one of these?
+[6:22 pm, 14/06/2022] Nataly Epita: no but i can try working on the grafana part
+[6:23 pm, 14/06/2022] Med Hedi Ben Atig: Not really but we can try ..
+[6:24 pm, 14/06/2022] Ediz: Sounds good. Like we can work on these 2 by each
+[6:24 pm, 14/06/2022] Ediz: Also we'll try to help in case if there are any missing parts
+[6:24 pm, 14/06/2022] Ediz: Maybe would be better if you can write down on which topic you'd like to work
+[6:25 pm, 14/06/2022] Med Hedi Ben Atig: Yess .. if we have time we can sit tomorrow in lunch break ?
+[6:26 pm, 14/06/2022] Nataly Epita: https://youtu.be/2g1ZjA6zHRo
+[6:26 pm, 14/06/2022] Nataly Epita: this is the video ibrahim team used
+[6:26 pm, 14/06/2022] Ediz: Sure I can. Still better to search on those individually i think. That's what I'm going to do
+[6:27 pm, 14/06/2022] Nataly Epita: for the database part I think
+[6:27 pm, 14/06/2022] Med Hedi Ben Atig: I’ll work on the database i’ll try to
+[6:27 pm, 14/06/2022] Med Hedi Ben Atig: I will do some search tonight
+[6:28 pm, 14/06/2022] Ediz: Looks detailed enough
+[6:28 pm, 14/06/2022] Ediz: Ok
+[6:29 pm, 14/06/2022] Ediz: Just write down if you have a preference @everyone
+[6:33 pm, 14/06/2022] Ediz: Btw i have some experience on grafana. I think it will be better if we start working on it with @Nataly Epita. And then we'll shift to others if there are still missing points or anything
+[6:46 pm, 14/06/2022] Nataly Epita: ok great
+[7:11 pm, 14/06/2022] Julian: Hello
+[7:11 pm, 14/06/2022] Julian: No 🥺
+[7:11 pm, 14/06/2022] Julian: But we can learn it
+[7:13 pm, 14/06/2022] Julian: Gues only airflow is missing
+[7:13 pm, 14/06/2022] Julian: I will investigate about it
+[7:13 pm, 14/06/2022] Julian: 🤓
+[7:13 pm, 14/06/2022] Ediz: yeah! i think you'll get that part easier than us since you already created the ml part
+[7:14 pm, 14/06/2022] Ediz: still let me know in case if any help is needed
+[7:20 pm, 14/06/2022] Julian: Ok ok
+[7:20 pm, 14/06/2022] Julian: You too if need help
+[7:20 pm, 14/06/2022] Julian: @Ediz all the final code it’s on the GitHub right?
+[7:23 pm, 14/06/2022] Ediz: right, including the readme instructions. just 4 lines or something but still does the work :D
+[7:24 pm, 14/06/2022] Ediz: merci. actually would be so good if you could check the permissions of the repository for all of us
+[9:14 pm, 14/06/2022] Julian: Why? What is not working
+[9:30 pm, 14/06/2022] Ediz: Working well but just for you, me and @Nataly Epita i think
+[5:59 pm, 17/06/2022] Med Hedi Ben Atig: conn = _connect(dsn, connection_factory=connection_factory, **kwasync) sqlalchemy.exc.OperationalError: (psycopg2.OperationalError)
+[5:59 pm, 17/06/2022] Med Hedi Ben Atig: is anyone familiar with this error ?
+[6:07 pm, 17/06/2022] Ediz: hmm not really. maybe i can check if it's under a branch
+[6:08 pm, 17/06/2022] Med Hedi Ben Atig: not yet i'm trying to create and connect the database on a local app before editing our work .. like a demo to follow
+[6:10 pm, 17/06/2022] Med Hedi Ben Atig: c'est bon i solved it
+[6:12 pm, 17/06/2022] Julian: No idea
+[6:12 pm, 17/06/2022] Julian: 🥺
+[6:13 pm, 17/06/2022] Med Hedi Ben Atig: no worries bro .. solved
+[6:33 pm, 17/06/2022] Julian: I had some non techno issues and is that I’m stupid 😂😂😂 because these days I was trying to learn ml flow and not air flow so was very confused on how to make the petitions work since I was searching the wrong software 🤦🏻‍♂️😂😂 but now I start cheking and don’t expected to be that hard
+[6:35 pm, 17/06/2022] Ediz: Hahsha i'm sure it won't be and we still have time anyway
+[6:38 pm, 17/06/2022] Julian: 😂😂 yeiiii
+[11:18 pm, 18/06/2022] Med Hedi Ben Atig: Guys i dunno why but i can’t run the streamlit app .. it’s driving me crazy .. i did everything .. installed it .. checked the path .. but nada ..
+[11:23 pm, 18/06/2022] Ediz: sorry i don't really know why... have you tried to run with docker
+[11:23 pm, 18/06/2022] Ediz: docker-compose up --build
+[11:23 pm, 18/06/2022] Ediz: like this from the main path
+[11:41 pm, 18/06/2022] Med Hedi Ben Atig: same prob ..
+[0:28 am, 19/06/2022] Ediz: hmm
+[3:58 pm, 19/06/2022] Julian: Hello
+[4:00 pm, 19/06/2022] Julian: I have a question: since in the picture it says that we have to store the predictions in psql I'm not sure if this process is made when ever someone called the API or it will be only from the scheduled predictions job
+[4:01 pm, 19/06/2022] Julian: So all the predictions that are down are going to be store in a database right?
+[4:03 pm, 19/06/2022] Med Hedi Ben Atig: i just pushed sth .. it creates and connects to the pgsql and stores whatever we want in the database using an api (i did the unit tests and it's working).. so all we need is to connect the predections as json inputs
+[4:03 pm, 19/06/2022] Med Hedi Ben Atig: yesss
+[4:04 pm, 19/06/2022] Julian: Perfect
+[4:04 pm, 19/06/2022] Julian: So when someone make a prediction and called the api it is saved automatically in the database right?
+[4:05 pm, 19/06/2022] Med Hedi Ben Atig: it's not configured that way yet but that's what i will do yess
+[4:08 pm, 19/06/2022] Julian: Ok ok perfect
+[6:17 pm, 19/06/2022] Ediz: hey man no worries on the DB part. we somehow needed to create it to be able to get stuff from grafana and it's working now. also didn't use postgres so don't know if you need to spend time on it. we can still expand the project with https://evidentlyai.com/ though if you were planning to spend time on DB part
+[6:23 pm, 19/06/2022] Med Hedi Ben Atig: It’s almost done for me i only need to give the json of the prediction from streamlit app to the api to store it in pg .. but if it’s working for u already then it’s okay ..U used another DB ? Is it displaying and storing the predictions ?
+[6:23 pm, 19/06/2022] Med Hedi Ben Atig: R there any missing part yet ?
+[6:26 pm, 19/06/2022] Ediz: Yeah it stores and also shows on grafana. I'm trying to do the same with docker now
+[6:27 pm, 19/06/2022] Ediz: We're almost going to be complete after this part and also with sirflow
+[6:27 pm, 19/06/2022] Ediz: Airflow
+[6:27 pm, 19/06/2022] Med Hedi Ben Atig: Ah okay perfect
+[6:27 pm, 19/06/2022] Ediz: Evidentalyai.com can be another part to improve the stuff we have
+[6:28 pm, 19/06/2022] Ediz: Alaa said it's optinal
+[6:28 pm, 19/06/2022] Ediz: I also dont know how it works or how to configure
+[6:28 pm, 19/06/2022] Med Hedi Ben Atig: I’ll try to understand it tonight and if we can we’ll implement it since we still have time
+[6:30 pm, 19/06/2022] Ediz: Ok write down if something is needed from the parts we completed. Alaa might ask in the presentation part i think
+[6:31 pm, 19/06/2022] Med Hedi Ben Atig: Yeah sure .. r we gonna present on 22nd ?
+[6:58 pm, 19/06/2022] Ediz: i'm not really sure
+[6:58 pm, 19/06/2022] Nataly Epita: yes
+[6:58 pm, 19/06/2022] Ediz: btw i think you directly merged into main branch
+[6:58 pm, 19/06/2022] Ediz: can you take it back and put it under a new branch?
+[6:59 pm, 19/06/2022] Med Hedi Ben Atig: I created a new branch !
+[6:59 pm, 19/06/2022] Med Hedi Ben Atig: I’m at the gym now .. once i’m home i’ll do it sure
+[7:00 pm, 19/06/2022] Ediz: like this here
+[7:01 pm, 19/06/2022] Med Hedi Ben Atig: Okay i’ll do it
+[8:00 pm, 19/06/2022] Julian: ediz in heroku how do you do the petitions to the fast api ?
+[8:01 pm, 19/06/2022] Ediz: the same way we do in local
+[8:01 pm, 19/06/2022] Ediz: it's just not on heroku but aws
+[8:01 pm, 19/06/2022] Ediz: what do you need to know specifically ?
+[8:02 pm, 19/06/2022] Julian: like how to make the https request and to which ip
+[8:02 pm, 19/06/2022] Ediz: there are some examples for that under streamlit/main.py
+[8:03 pm, 19/06/2022] Ediz: but you're going to do your request from somewhere else i think
+[8:03 pm, 19/06/2022] Julian: yes yes
+[8:03 pm, 19/06/2022] Julian: perfect
+[8:03 pm, 19/06/2022] Julian: rhanks
+[8:04 pm, 19/06/2022] Julian: thanks
+[8:04 pm, 19/06/2022] Ediz: you can keep the address as http://0.0.0.0:port in case if you're not on docker
+[8:05 pm, 19/06/2022] Ediz: those http://fastapi:port ones only working on docker
+[3:10 pm, 20/06/2022] Med Hedi Ben Atig: Guys i don’t have permission to add a branch
+[3:14 pm, 20/06/2022] Aida: Ediz is checking it noe
+[3:14 pm, 20/06/2022] Aida: now*
+[3:14 pm, 20/06/2022] Ediz: hey
+[3:14 pm, 20/06/2022] Med Hedi Ben Atig: okii
+[3:14 pm, 20/06/2022] Med Hedi Ben Atig: hola
+[3:14 pm, 20/06/2022] Ediz: i fixed the stuff on main branch yesterday
+[3:14 pm, 20/06/2022] Ediz: what're you going to create the new branch for?
+[3:14 pm, 20/06/2022] Med Hedi Ben Atig: yeah i checked and i found it done
+[3:15 pm, 20/06/2022] Med Hedi Ben Atig: for ala to see that we all worked on it
+[3:15 pm, 20/06/2022] Ediz: yeah. how did you try to create the branch though?
+[3:16 pm, 20/06/2022] Ediz: try with
+[3:16 pm, 20/06/2022] Med Hedi Ben Atig: checkout to .. and just add the name of the branch but it says that i don't have perrmession to create a branch dunno why
+[3:18 pm, 20/06/2022] Ediz: hmm yes remembered now. i changed it yesterday after fixing the stuff to not do parallel stuff
+[3:18 pm, 20/06/2022] Ediz: i think you can now
+[3:18 pm, 20/06/2022] Ediz: but please keep it under the branch only
+[3:19 pm, 20/06/2022] Med Hedi Ben Atig: yeah sure
+[3:30 pm, 20/06/2022] Med Hedi Ben Atig: can u check ?
+[3:44 pm, 20/06/2022] Ediz: looks solid
+[3:44 pm, 20/06/2022] Ediz: btw we're using fastapi, streamlit, sqlite3, airflow and docker as of main tools
+[3:45 pm, 20/06/2022] Ediz: could be helpful while presenting
+[3:45 pm, 20/06/2022] Ediz: and we'll also go over on it altogether
+[3:45 pm, 20/06/2022] Med Hedi Ben Atig: Yess sure i have a very good idea abt it .. i spend the whole weekend on it 😂 but wonderful work guys 🔥
+[10:52 pm, 20/06/2022] Ediz: hey @Julian can you try to reproduce this from airflow branch?
+[10:53 pm, 20/06/2022] Julian: It worked on your computer?
+[10:53 pm, 20/06/2022] Ediz: yeah
+[10:53 pm, 20/06/2022] Julian: 😍😍
+[10:53 pm, 20/06/2022] Julian: How did you do?
+[10:53 pm, 20/06/2022] Ediz: but not through api
+[10:53 pm, 20/06/2022] Julian: I’ve trying for 4 hours
+[10:53 pm, 20/06/2022] Julian: Oh shit
+[10:53 pm, 20/06/2022] Julian: So how?
+[10:54 pm, 20/06/2022] Ediz: it's working anyways. better than nothing :D
+[10:54 pm, 20/06/2022] Ediz: included the model into airflow directly...
+[10:56 pm, 20/06/2022] Julian: Ohhh ok ok
+[10:56 pm, 20/06/2022] Julian: You allready push?
+[10:57 pm, 20/06/2022] Ediz: yes i did
+[11:00 pm, 20/06/2022] Ediz: could someone try to reorder the code with flake8 and leave comments for necessary functions/bits?
+[11:06 pm, 20/06/2022] Julian: Ok ok
+[11:06 pm, 20/06/2022] Julian: But data will be not stored in the database right?
+[11:09 pm, 20/06/2022] Ediz: Yeah it will be kept on database
+[11:09 pm, 20/06/2022] Ediz: In airflow's own postgres db
+[11:10 pm, 20/06/2022] Ediz: Not gonna appear on grafana
+[11:10 pm, 20/06/2022] Ediz: He doesn't ask for that specifically though
+[11:11 pm, 20/06/2022] Ediz: did it work on yours?
+[11:11 pm, 20/06/2022] Ediz: also the scheduling time needs to be set i think
+[11:11 pm, 20/06/2022] Ediz: it's always working
+[11:12 pm, 20/06/2022] Julian: Ok yes that’s true
+[11:12 pm, 20/06/2022] Julian: Finally it’s in richer right?
+[11:13 pm, 20/06/2022] Julian: Docker
+[11:13 pm, 20/06/2022] Ediz: yes
+[11:13 pm, 20/06/2022] Ediz: docker system prune -a --volumes
+[11:13 pm, 20/06/2022] Ediz: do this to remove eveything first
+[11:14 pm, 20/06/2022] Ediz: docker-compose up airflow-init
+[11:14 pm, 20/06/2022] Ediz: then this to initialize airflow
+[11:14 pm, 20/06/2022] Ediz: docker-compose up --build
+[11:14 pm, 20/06/2022] Ediz: in the end
+[11:15 pm, 20/06/2022] Julian: Ok ok I’m doing it
+[11:22 pm, 20/06/2022] Julian: But should I run it in the main fielder?
+[11:22 pm, 20/06/2022] Julian: Or in airflow folder?
+[11:27 pm, 20/06/2022] Ediz: From main directly
+[11:34 pm, 20/06/2022] Julian: Oh shit I did it in the airflow folder jaja
+[11:34 pm, 20/06/2022] Julian: I will have to run it again
+[11:35 pm, 20/06/2022] Ediz: 🙃
+[11:43 pm, 20/06/2022] Julian: And then to run with docker-compose up?
+[11:45 pm, 20/06/2022] Ediz: 1
+[11:45 pm, 20/06/2022] Ediz: 2
+[11:45 pm, 20/06/2022] Ediz: 3
+[11:45 pm, 20/06/2022] Ediz: These 3 in order
+[11:46 pm, 20/06/2022] Julian: But after this one
+[11:46 pm, 20/06/2022] Julian: Nothing happens
+[11:46 pm, 20/06/2022] Ediz: It will take some time. Don't get worried 🙃
+[11:46 pm, 20/06/2022] Ediz: Like nothing nothing?
+[11:47 pm, 20/06/2022] Ediz: Any errors maybe?
+[11:47 pm, 20/06/2022] Julian: Yes
+[11:47 pm, 20/06/2022] Julian: The one of the port
+[11:47 pm, 20/06/2022] Ediz: Can you try that
+[11:47 pm, 20/06/2022] Ediz: lsof
+[11:47 pm, 20/06/2022] Ediz: Command again to see which one uses that port
+[11:48 pm, 20/06/2022] Ediz: It hast to work though. We did it today on yours. Maybe some other airflow stayed open in another terminal
+[11:49 pm, 20/06/2022] Julian: Yes I’m looking to that
+[0:13 am, 21/06/2022] Julian: perfect
+[0:13 am, 21/06/2022] Julian: its working
+[0:14 am, 21/06/2022] Julian: to put out the other files
+[0:14 am, 21/06/2022] Julian: have you done any change in the proyect ? or can i push this
+[0:21 am, 21/06/2022] Julian: done
+[0:22 am, 21/06/2022] Ediz: so cool
+[0:23 am, 21/06/2022] Ediz: no i haven't you can
+[0:24 am, 21/06/2022] Julian: ok ok
+[0:25 am, 21/06/2022] Julian: perfect
+[0:25 am, 21/06/2022] Julian: just push
+[0:32 am, 21/06/2022] Ediz: you can also merge airflow to main btw
+[0:32 am, 21/06/2022] Ediz: i think it's complete now
+[0:34 am, 21/06/2022] Julian: Ok
+[0:35 am, 21/06/2022] Julian: theres conflicts
+[0:35 am, 21/06/2022] Julian: README.md grafana_config/dashboards/graph_and_variables.json
+[0:36 am, 21/06/2022] Julian: with these two classes
+[0:36 am, 21/06/2022] Ediz: Yeah i just added minor grafana stuff before merge
+[0:37 am, 21/06/2022] Julian: i allready created the pull request
+[0:37 am, 21/06/2022] Ediz: Git pull and then merge should be fine hopefully
+[0:38 am, 21/06/2022] Ediz: it's not completing the request or?
+[0:38 am, 21/06/2022] Julian: no
+[0:38 am, 21/06/2022] Julian: it says theres conflicts
+[0:39 am, 21/06/2022] Julian: i could solve the one of the read me
+[0:39 am, 21/06/2022] Julian: but the other I'm not sure if i can
+[0:41 am, 21/06/2022] Julian: i think i cpuld solve it
+[0:41 am, 21/06/2022] Julian: working on that
+[0:41 am, 21/06/2022] Ediz: i solved the other one i think
+[0:41 am, 21/06/2022] Ediz: can you check again
+[0:41 am, 21/06/2022] Julian: ok ok
+[0:43 am, 21/06/2022] Julian: il solve the both conflicts based on the second one
+[0:43 am, 21/06/2022] Ediz: yeah we needed the have airflow ones only
+[0:44 am, 21/06/2022] Ediz: also looks like this on me
+[0:45 am, 21/06/2022] Julian: ready
+[0:45 am, 21/06/2022] Julian: merge its done
+[2:59 pm, 21/06/2022] Ediz: can someone follow the instruction here and approve they're all working?
+[3:00 pm, 21/06/2022] Ediz: as in here
+[3:00 pm, 21/06/2022] Ediz: would be cool to have screenshots
+[3:00 pm, 21/06/2022] Ediz: https://github.com/EpitaDataAlliance/DSA_Data_Alliance_proyect
+[3:17 pm, 21/06/2022] Julian: yes sure
+[3:17 pm, 21/06/2022] Julian: il do it
+[5:44 pm, 21/06/2022] Nataly Epita: what are we gonna do for presentation
+[5:51 pm, 21/06/2022] Julian: Ediz
+[5:51 pm, 21/06/2022] Julian: The part of setting the environment
+[5:51 pm, 21/06/2022] Julian: Is missing I. Here no?
+[5:52 pm, 21/06/2022] Julian: Or since we are used docker it’s no required
+[5:52 pm, 21/06/2022] Julian: 😅
+[5:56 pm, 21/06/2022] Julian: shows me this
+[6:01 pm, 21/06/2022] Ediz: How? Is there any error log in fastapi?
+[6:09 pm, 21/06/2022] Julian: I think that we all try executed in case Ala could say that someone specific have to show the demo ​@Aida @Med Hedi Ben Atig  @Nataly Epita
+[6:16 pm, 21/06/2022] Ediz: Ah ok you just need to restart everyting on docker because i changed the columns of the DB to get the other params
+[6:17 pm, 21/06/2022] Ediz: Need to do
+[6:17 pm, 21/06/2022] Ediz: docker system prune -a --volumes
+[6:17 pm, 21/06/2022] Ediz: And then as same as in the instructions
+[6:47 pm, 21/06/2022] Med Hedi Ben Atig: I’m on my way home i’ll try it once i’m home
+[6:51 pm, 21/06/2022] Julian: its workiing
+[6:51 pm, 21/06/2022] Julian: ediz which is grafana password
+[6:52 pm, 21/06/2022] Ediz: User admin
+[6:52 pm, 21/06/2022] Ediz: Pass admin123
+[6:55 pm, 21/06/2022] Julian: It’s working prefect !
+[7:50 pm, 21/06/2022] Nataly Epita: for the grafana part it says wrong username pass
+[7:50 pm, 21/06/2022] Ediz: what did you use for that @juk
+[7:50 pm, 21/06/2022] Ediz: @Julian
+[7:51 pm, 21/06/2022] Julian: This
+[7:51 pm, 21/06/2022] Ediz: yeah must be
+[7:51 pm, 21/06/2022] Ediz: admin
+[7:51 pm, 21/06/2022] Ediz: admin123
+[7:52 pm, 21/06/2022] Nataly Epita: weird then
+[7:52 pm, 21/06/2022] Nataly Epita: so when you run the docker compose build
+[7:52 pm, 21/06/2022] Nataly Epita: does it say port 3000 already in use?
+[7:55 pm, 21/06/2022] Julian: Try running this
+[7:56 pm, 21/06/2022] Ediz: kill -9 $(lsof -ti:3000)
+[7:56 pm, 21/06/2022] Ediz: can also work
+[7:56 pm, 21/06/2022] Nataly Epita: did this but it didnt work
+[7:56 pm, 21/06/2022] Nataly Epita: ill try this now
+[8:06 pm, 21/06/2022] Julian: Ok ok
+[11:47 pm, 21/06/2022] Med Hedi Ben Atig: Guys can anyone do a vid record demo ? It’s not working for me i dunno why i think i have an environment problem
+[11:48 pm, 21/06/2022] Med Hedi Ben Atig: I have the same problem with docker
+[11:48 pm, 21/06/2022] Ediz: really, right now?
+[11:49 pm, 21/06/2022] Med Hedi Ben Atig: Yup .. the problem is in my machine so don’t worry
+[11:50 pm, 21/06/2022] Ediz: ok i won't
+[11:52 pm, 21/06/2022] Ediz: man i could do if you wouldn't ask just couple of hours before but sorry
+[11:53 pm, 21/06/2022] Med Hedi Ben Atig: i had to present for the KM&innovation so i slept .. anyway we'll run it tomorrow we're not the first grp
+[8:20 am, 22/06/2022] Med Hedi Ben Atig: @Julian good morning.. r u coming ? We will start in few minutes
+[9:32 am, 22/06/2022] Julian: Fuck I don’t know why my cellphone did not charge
+[9:33 am, 22/06/2022] Julian: Like I had so many alarmas but the fuking cellphone did not charge
+[10:38 am, 22/06/2022] Nataly Epita: ahh yikes
+[10:39 am, 22/06/2022] Nataly Epita: thats ok tho i think you should just send him a message on teams maybe
+[10:39 am, 22/06/2022] Nataly Epita: or are you coming to the rest of the class?
+[11:15 pm, 30/06/2022] Ediz: have you guys seen the grades?
+[11:16 pm, 30/06/2022] Med Hedi Ben Atig: Yesss
+[11:16 pm, 30/06/2022] Julian: Of what ?
+[11:17 pm, 30/06/2022] Med Hedi Ben Atig: Java
+[11:17 pm, 30/06/2022] Julian: Ohhh yes yes
+[11:17 pm, 30/06/2022] Julian: I pass 😀😀
+[11:17 pm, 30/06/2022] Ediz: no, for this class
+[11:17 pm, 30/06/2022] Ediz: dsp
+[11:17 pm, 30/06/2022] Ediz: 🚀
+[11:17 pm, 30/06/2022] Ediz: hope i'm not the only one who couldn't pass both
+[11:18 pm, 30/06/2022] Med Hedi Ben Atig: 14 :D
+[11:18 pm, 30/06/2022] Med Hedi Ben Atig: In what ?
+[11:18 pm, 30/06/2022] Med Hedi Ben Atig: R they out ?
+[11:18 pm, 30/06/2022] Med Hedi Ben Atig: For me it didn’t change
+[11:18 pm, 30/06/2022] Nataly Epita: dsp isnt out bro
+[11:19 pm, 30/06/2022] Julian: Ohhh no
+[11:19 pm, 30/06/2022] Julian: But you can check the grade? It does not appear for me
+[11:20 pm, 30/06/2022] Ediz: ah then it must be only mine
+[11:20 pm, 30/06/2022] Aida: no, you are not
+[11:20 pm, 30/06/2022] Ediz: we don't have anything else than these i think
+[11:20 pm, 30/06/2022] Ediz: voila ! we should celebrate 😂
+[11:21 pm, 30/06/2022] Nataly Epita: no no this isnt the final grade
+[11:21 pm, 30/06/2022] Nataly Epita: its just a placeholder for the grades
+[11:22 pm, 30/06/2022] Med Hedi Ben Atig: Don’t worry guys there are 3 other classes in the module you will pass it
+[11:22 pm, 30/06/2022] Nataly Epita: only the house pricing and git are the real grades
+[11:22 pm, 30/06/2022] Nataly Epita: so dont worry it can still be higher when he grades the project
+[11:22 pm, 30/06/2022] Med Hedi Ben Atig: 0-0 for me yaaay xD
+[11:22 pm, 30/06/2022] Nataly Epita: 😭😭😭
+[11:23 pm, 30/06/2022] Ediz: ah hope so. Alaa said that?
+[11:23 pm, 30/06/2022] Med Hedi Ben Atig: Yup
+[11:23 pm, 30/06/2022] Nataly Epita: yeah he said it in one of the classes
+[11:24 pm, 30/06/2022] Julian: 😍
+[10:28 am, 01/07/2022] Med Hedi Ben Atig: Hey guys did you have a break yet
+[10:28 am, 01/07/2022] Aida: hi, no not yet
+[10:29 am, 01/07/2022] Med Hedi Ben Atig: Okay .. did he do the attendance ? There was a traffic prob in the mornin..
+[10:33 am, 01/07/2022] Aida: nope
+[11:02 pm, 01/07/2022] Med Hedi Ben Atig: Guys data exploration grades are out
+[11:08 pm, 01/07/2022] Aida: merci
+[11:08 pm, 01/07/2022] Med Hedi Ben Atig: Je t’en prie
+[11:55 pm, 01/07/2022] Julian: thanks wiii
+[11:55 pm, 01/07/2022] Med Hedi Ben Atig: Hope u all did well guys
+[11:56 pm, 01/07/2022] Aida: at least passed 😹
+[11:59 pm, 01/07/2022] Med Hedi Ben Atig: Perfeeeeect 😁 for me i made up for the machine learning 😂
+[11:19 am, 02/07/2022] Med Hedi Ben Atig: Hey who wanna work in a grp for the computer vision
